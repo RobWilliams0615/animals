@@ -1,5 +1,13 @@
 import { useState } from 'react';
 
+function getRandomAnimal() {
+  const animals = ['lizard', 'dog', 'moose', 'elk', 'hawk', 'goat'];
+
+  return animals[Math.floor(Math.random() * animals.length)];
+}
+
+console.log(getRandomAnimal());
+
 function App() {
   const [count, setCount] = useState(0);
 
