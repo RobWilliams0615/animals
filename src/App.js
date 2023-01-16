@@ -1,5 +1,13 @@
 function App() {
-  return <div>Show animal list here</div>;
+  const handleClick = () => {
+    console.log('button clicked!');
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Add an Animal</button>
+    </div>
+  );
 }
 
 export default App;
