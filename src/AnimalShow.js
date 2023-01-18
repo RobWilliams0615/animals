@@ -31,6 +31,7 @@ function AnimalShow({ type }) {
   return (
     <div onClick={handleClick}>
       <img alt="animal" src={svgMap[type]} />
+      <img alt="like" src={heart} style={{ width: 10 + 10 * likes }} />
     </div>
   );
 }
