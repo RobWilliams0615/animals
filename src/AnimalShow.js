@@ -2,6 +2,10 @@
 
 import { useState } from 'react';
 
+// CSS Imports
+
+import './AnimalShow.css';
+
 // Image Imports
 
 import bird from './svg/bird.svg';

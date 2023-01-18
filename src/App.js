@@ -1,4 +1,13 @@
+// React Imports
+
 import { useState } from 'react';
+
+// CSS Imports
+
+import './App.css';
+
+// Component Imports
+
 import AnimalShow from './AnimalShow';
 
 function getRandomAnimal() {
