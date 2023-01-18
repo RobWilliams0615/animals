@@ -22,7 +22,11 @@ const svgMap = {
 };
 
 function AnimalShow({ type }) {
-  const handleClick = () => {};
+  const [likes, setLikes] = useState(0);
+
+  const handleClick = () => {
+    setLikes(likes + 1);
+  };
 
   return (
     <div onClick={handleClick}>
