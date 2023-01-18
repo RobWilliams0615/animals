@@ -25,12 +25,18 @@ const svgMap = {
   horse
 };
 
+// Sets inital State for like img
+
 function AnimalShow({ type }) {
   const [likes, setLikes] = useState(0);
+
+  // Updates state for setLikes when like img clicked
 
   const handleClick = () => {
     setLikes(likes + 1);
   };
+
+  // JSX
 
   return (
     <div className="animal-show" onClick={handleClick}>
