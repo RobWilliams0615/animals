@@ -1,3 +1,9 @@
+// React Imports
+
+import { useState } from 'react';
+
+// Image Imports
+
 import bird from './svg/bird.svg';
 import cat from './svg/cat.svg';
 import cow from './svg/cow.svg';
@@ -16,8 +22,10 @@ const svgMap = {
 };
 
 function AnimalShow({ type }) {
+  const handleClick = () => {};
+
   return (
-    <div>
+    <div onClick={handleClick}>
       <img alt="animal" src={svgMap[type]} />
     </div>
   );
