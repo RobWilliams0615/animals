@@ -1,3 +1,13 @@
+// React Imports
+
+import { useState } from 'react';
+
+// CSS Imports
+
+import './AnimalShow.css';
+
+// Image Imports
+
 import bird from './svg/bird.svg';
 import cat from './svg/cat.svg';
 import cow from './svg/cow.svg';
@@ -15,10 +25,28 @@ const svgMap = {
   horse
 };
 
+// Sets inital State for like img
+
 function AnimalShow({ type }) {
+  const [likes, setLikes] = useState(0);
+
+  // Updates state for setLikes when like img clicked
+
+  const handleClick = () => {
+    setLikes(likes + 1);
+  };
+
+  // JSX
+
   return (
-    <div>
-      <img alt="animal" src={svgMap[type]} />
+    <div className="animal-show" onClick={handleClick}>
+      <img className="animal" alt="animal" src={svgMap[type]} />
+      <img
+        className="like"
+        alt="like"
+        src={heart}
+        style={{ width: 10 + 10 * likes + 'px' }}
+      />
     </div>
   );
 }
